@@ -1,0 +1,68 @@
+/* #nav {
+    border: 2px solid red;
+    background-image: url(/assets/img/navbar.png);
+
+    
+
+} */
+
+
+p.navbar-brand{
+    margin-right: 3vw;
+    
+}
+
+div.container-fluid{
+padding-left: 0;
+}
+
+#carouselExemple {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.row{
+    margin-bottom: 15px;
+}
+
+@media (min-width:1080px) {
+    #nav{
+       
+        border: 2px solid red;
+    }
+    .logo{
+        display: none;
+        border: 2px solid;
+    }
+    .logo2{
+        display: inline;
+        width: 8vw;
+    margin: 1vw;
+    margin-right: 0;
+    }
+    
+}
+
+@media (max-width: 1080px){
+    .menu{
+        display: none;
+    }
+}
+
+@media (max-width: 480px){
+  nav div .container-fluid{
+      display: block;
+      border: 1px solid blue;
+  }
+    p.navbar-brand{
+       text-align: right;
+        border: 1px solid red;
+    }
+
+}
