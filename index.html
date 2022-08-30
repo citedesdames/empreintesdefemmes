@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
   <title>Empreintes de femmes : promenades du matrimoine en France</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -24,6 +25,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js" integrity="sha512-SGWgwwRA8xZgEoKiex3UubkSkV1zSE1BS6O4pXcaxcNtUlQsOmOmhVnDwIvqGRfEmuz83tIGL13cXMZn6upPyg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
 
@@ -33,25 +36,22 @@
   <nav style="background-color: #FAF2EA;" class="navbar navbar-expand-lg navbar-light" id="nav">
 
     <div class="container-fluid">
-      <div style="display: flex;">
-        <div style="flex-grow: 1;">
-          <img style="width: 8vw; height: auto;" src="/assets/img/logo.png" alt="">
-        </div>
+      <div style="display:flex;">
         <div class="navbar-brand">
-          <h1>Empreintes de Femmes</h1>
+          <h1><img src="assets/img/logo-epais.png" style="height:2em" alt=""> Empreintes de Femmes</h1>
         </div>
       </div>
 
       <div class="menu">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#map">Map</a>
+            <a class="nav-link" href="#map">Carte</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#nouveaute">Nouveautés</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#promenade">Liste des pomenades</a>
+            <a class="nav-link" href="#promenade">Liste des promenades</a>
           </li>
         </ul>
       </div>
@@ -71,17 +71,23 @@
           style="border-bottom: #FF5858 solid 5px; font-family: 'Comfortaa', cursive; font-size: 1.2rem; margin: 15px; font-weight: bold;">
           Qui sommes-nous ?</h1>
         <p style="font-family: 'Roboto', sans-serif; font-size: 1em; text-align: justify;"><i>Empreintes de femmes</i>
-          est un site web développé dans le cadre du projet de recherche <a
+          est un site web développé dans le cadre du projet de recherche <a class="link-primary"
             href="https://citedesdames.hypotheses.org/"><i>Cité des Dames, créatrices dans la cité</i></a> de
-          l’Université Gustave Eiffel. Ce site recense de nombreuses promenades du matrimoine en France.
+          l’Université Gustave Eiffel. Ce site recense plus d'une centaine de promenades du matrimoine en France.
           Venez découvrir l’histoire de ces femmes de sciences, de lettres, de pouvoir ou encore résistantes, qui ont
-          contribué à la fabrique de l’histoire des villes. Redécouvrez vos villes grâce à elles !
+          contribué à la fabrique de l’histoire des villes. Redécouvrez vos villes grâce à elles&nbsp;!
         </p>
       </div>
     </section>
 
     <!---------------------------------- carte interactive ----------------------------->
     <div class="container" id="map" style="margin-bottom: 50px;">
+      <div class="row">
+        <h1 style="background-color: #FAF2EA; border: solid 2px #FFAE9D; border-radius: 6px; width: 90vw; font-family: 'Comfortaa'; font-size: 1.2rem; width: -moz-max-content;    /* Firefox */
+        width: -webkit-max-content; color: #FF5858;border: solid 2px #FF5858; padding: 10px; text-align: center;">
+          Carte des promenades</h1>
+      </div>
+      <div class="row">
       <iframe style="border-radius: 6px;" width="100%" height="500px" frameborder="0" allowfullscreen
         src="https://umap.openstreetmap.fr/fr/map/empreintes-de-femmes-promenades-du-matrimoine_776279?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe>
       <p>
@@ -90,6 +96,7 @@
           Voir en plein écran
         </a>
       </p>
+      </div>
     </div>
 
     <!------------------------------------------ Nouveautés ------------------------------------->
@@ -98,6 +105,8 @@
         <h1 style="background-color: #FAF2EA; border: solid 2px #FFAE9D; border-radius: 6px; width: 90vw; font-family: 'Comfortaa'; font-size: 1.2rem; width: -moz-max-content;    /* Firefox */
         width: -webkit-max-content; color: #FF5858;border: solid 2px #FF5858; padding: 10px; text-align: center;">
           Nouveautés !</h1>
+      </div>
+      <div class="row">
         <!--------------------------- carousel ------------------------>
         <div id="carousel" class="col-md-12 carousel slide" data-ride="carousel" data-interval="3000" style="">
           <div class="carousel-inner">
@@ -182,26 +191,6 @@
             <!----------------------------- D ------------------->
             <div id="D">
 
-              <div class="card mb-3 border-0 rounded-0" id="espace">
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="assets/img/nouveaute/nouv3.png" class="img-fluid" alt="">
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card-body">
-                      <h5 class="card-title">Sur les pas de
-                        Marceline Desbordes-Valmore</h5>
-                      <p class="card-text">En 16 étapes, à travers des documents iconographiques, des vidéos et des
-                        podcasts, ce parcours vous propose de découvrir le Douai de Marceline Desbordes-Valmore</p>
-                      <p class="card-text"><a target="_blank"
-                          href="https://view.genial.ly/602e5f5d9689f70d371aa9f1/interactive-image-parcours-marceline-desbordes-valmore"
-                          class="text-muted btn">en savoir plus</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
             </div>
             <!--------------------------- E ---------------------->
             <div id="E">
@@ -249,44 +238,6 @@
             </div>
             <!--------------------------- P --------------------->
             <div id="P">
-              <!-- Paris -->
-
-              <div class="card mb-3 border-0 rounded-0" id="espace">
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="assets/img/nouveaute/nouv1.png" class="img-fluid" alt="">
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card-body">
-                      <h5 class="card-title">Les engagements des femmes pendant la Commune de Paris de 1871</h5>
-                      <p class="card-text">Anouk Colombani vous propose une balade urbaine dans le Xe arrondissement de
-                        Paris sur l’engagement des femmes lors de la Commune de Paris.</p>
-                      <p class="card-text"><a target="_blank"
-                          href="https://exploreparis.com/fr/3648-les-engagements-des-femmes-pendant-la-commune-de-paris-de-1871.html"
-                          class="text-muted btn">en savoir plus</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card mb-3 border-0 rounded-0">
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="assets/img/nouveaute/nouv2.png" class="img-fluid" alt="">
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card-body">
-                      <h5 class="card-title">Balade sur les traces de grandes figures féminines à Paris</h5>
-                      <p class="card-text">A travers ce parcours, découvrez le portrait de certaines des plus illustres
-                        femmes qui ont exprimé leurs talents de bien des manières et continuent aujourd'hui d'inspirer
-                        le monde entier.</p>
-                      <p class="card-text"><a target="_blank"
-                          href="https://www.parisinfo.com/decouvrir-paris/balades-a-paris/balade-sur-les-traces-figures-feminines-paris"
-                          class="text-muted btn">en savoir plus</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
             </div>
             <!-------------------------- Q ----------------------->
@@ -369,12 +320,13 @@
         <div class="row" style="color:#FF5858;padding:30px;">
           <h2>Mentions légales</h2>
           <div class="col-md-12">
-            <p>Site conçu et développé par Danie Lancéa pendant son stage de deuxième année de DUT MMI à l'IUT de
+            <p>Site conçu et développé en HTML et CSS par <a class="link-primary" href="http://danie-lancea.fr/">Danie Lancéa</a> pendant son stage de deuxième année de DUT MMI à l'IUT de
               Champs-sur-Marne.
             </p>
             <p>Base de données alimentée par Danie Lancéa, Titouan Kerhervé-Remoussin et Philippe Gambette
             </p>
-            <p>Site hébergé par GitHub Pages. Directeur de publication : Philippe Gambette</p>
+            <p>Directeur de publication, développeur JS : <a class="link-primary" href="http://igm.univ-mlv.fr/~gambette/">Philippe Gambette</a></p>
+            <p>Site <a class="link-primary" href="https://github.com/citedesdames/empreintesdefemmes">hébergé par GitHub Pages</a>, code disponible <a class="link-primary" href="https://github.com/citedesdames/empreintesdefemmes">sous licence GPLv3.0</a>.</p>
           </div>
         </div>
 
@@ -397,6 +349,90 @@
   </footer>
 
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script>
+  let data = [];
+   
+  // Create a customized walk description for walk with identifier id
+  function customizeVisual(id){
+    // Insert all values from data into the code of the visual
+    Object.keys(data[id]).forEach(function(elementClass){
+      notTreated = true;
+      // Special case for the image (elementClass = portrait)
+      if(elementClass=="URL_portrait"){
+        if(data[id]["URL_portrait"].length > 3){
+          // Select the HTML element corresponding to elementClass and change CSS content
+          document.querySelector("#p"+id+" .portrait").innerHTML = '<a href="'+ data[id]["source_portrait"] +'"><img src="'+ data[id]["URL_portrait"] +'" title="' + data[id]["personne_portrait"] + ', cliquez sur l’image pour voir sa source." alt="' + data[id]["personne_portrait"] + '"></a>';
+        }
+        notTreated = false;
+      }
+      if(elementClass=="lat"){
+          // Select the HTML element corresponding to coord and change CSS coordinate top
+          // to center it properly on the city of the walk
+          let top = 52 - (parseFloat(data[id]["lat"])-51.034368)/(42.440965-51.034368)*92;
+          document.querySelector("#p"+id+" .coord").style.top = top + "%";
+          notTreated = false;
+      }
+      if(elementClass=="long"){
+          // Select the HTML element corresponding to coord and change CSS coordinate left
+          // to center it properly on the city of the walk
+          let left = 75 - (parseFloat(data[id]["long"])+4.486076)/(7.7521113+4.486076)*44;
+          document.querySelector("#p"+id+" .coord").style.left = left + "%";
+          notTreated = false;
+      }
+      if(notTreated){
+        // Select the HTML element corresponding to elementClass and change HTML content
+        if(document.querySelector("#p"+id+" ."+elementClass) != undefined){
+          document.querySelector("#p"+id+" ."+elementClass).innerHTML = data[id][elementClass];
+        }
+      }
+    })
+  }
+  
+  Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vRZVydqvJM4ElI_HMoQN7ohdJz9GsxmcxsC7jVKtRogAyj_aoxLcDPFSbST4pTGvdpSK1VTPchV5Laa/pub?gid=0&single=true&output=csv", {
+	  download: true,
+    header: true,
+    complete: function (results) {
+      let id = 0;
+      // Create walk descriptions from the data
+      results.data.sort(function(a,b){
+        let result = -1;
+        if(a.ville>b.ville){
+          result = 1
+        }
+        return result;
+      })
+      results.data.forEach(function(d){
+      if(d.ville != undefined && d.ville.length > 2){
+        data.push(d)
+        let blockId = d.ville[0];
+        // Creation of an almost-empty block presenting the walk
+        document.querySelector("#" + d.ville[0]).innerHTML += 
+        '<div class="card mb-3 border-0 rounded-0" id="espace">'
+        + '  <div id="p' + id + '" class="row">'
+        + '    <div class="col-md-6" style="position:relative";>'
+        + '      <div class="visuel">'
+        + '        <div class="portrait"></div><h2 class="titre"></h2>'
+        + '        <div class="date"></div>'
+        + '        <div class="ville"></div>'
+        + '        <div class="coordDot"></div>'
+        + '        <div class="coord"><img src="assets/img/france.png" alt=""></div>'
+        + '      </div>'
+        + '    </div>'
+        + '    <div class="col-md-6">'
+        + '      <h5 class="card-title"></h5>'
+        + '      <p class="card-text description"></p>'
+        + '      <p class="card-text"><a target="_blank" href="' + d.URL + '" class="text-muted btn">En savoir plus...</a></p>'
+        + '    </div>'
+        + '  </div>'
+        + '</div>';
+        // Customization of the block
+        customizeVisual(id);
+        id++;
+      };
+    });
+  }
+  });
+  </script>
 
 </body>
 

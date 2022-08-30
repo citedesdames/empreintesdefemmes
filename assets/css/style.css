@@ -11,6 +11,7 @@ body{
 
 p.navbar-brand{
   margin-right: 3vw; 
+  margin-top: 0.5em;
 }
 
 h1, h2{
@@ -23,7 +24,6 @@ div.container-fluid{
 }
 
 #carousel {
-  width: 50%;
   margin: 0 auto;
 }
 
@@ -90,3 +90,110 @@ footer section{
     border: 1px solid red;
   }
 }
+
+
+
+    .link-primary{
+      color:#ffae9d;
+    }
+
+    .link-primary:hover{
+      color:#ff5858;
+    }
+
+
+    .visuel{
+      position:relative;
+      width:516px;
+      height:258px;
+      background-color:#faf2ea;
+      padding:0px;
+      overflow:hidden;
+    }
+
+    .portrait{
+      position:absolute;
+      width:25%;
+      height:100%;
+      filter:grayscale(400%);
+      overflow:hidden;
+      display: flex;
+      justify-content: center;
+      z-index:1000;
+    }
+    .portrait img{
+      height:100%;
+      filter:grayscale(400%);
+      position:inline-block;
+    }
+    h1{
+      font-size:1.5em !important;
+      padding-top:0.5em !important;
+    }
+    h2.titre{
+      position:absolute;
+      left:25%;
+      right:10%;
+      top:5%;
+      background-color:#ff5858;
+      color:white;
+      font-family:Comfortaa, sans-serif;
+      font-size:1.3em;
+      padding:10px;
+      font-weight:normal;
+      z-index:1000;
+      line-height:90%;
+    }
+    h2.catch{
+      position:absolute;
+      left:15%;
+      right:10%;
+      bottom:2%;
+      background-color:#ffae9d;
+      color:white;
+      font-family:Comfortaa, sans-serif;
+      font-size:1.3em;
+      padding:10px;
+      font-weight:normal;
+      line-height:90%;
+    }
+    .date{
+      position:absolute;
+      left:27%;
+      bottom:9%;
+      color:#ff5858;
+      font-family:"Montserrat","Quicksand",sans-serif;
+      font-size:1.3em;
+      font-weight:normal;
+    }
+    .ville{
+      position:absolute;
+      left:27%;
+      bottom:29%;
+      color:#ffae9d;
+      font-family:"Montserrat","Quicksand",sans-serif;
+      font-size:3em;
+      font-weight:bold;
+      z-index:1000;
+      line-height:80%;
+    }
+    .coordDot{
+      position:absolute;
+      background-color:#ff5858;
+      width:15px;
+      height:15px;
+      border-radius:7px;
+      left:75%;
+      top:50%;
+      z-index:900;
+      filter:blur(1px);
+    }
+    .coord{
+      position:absolute;
+      height:100%;
+      filter:blur(1px);
+    }
+    .coord img{
+      height:100%;
+      filter:invert(100%) sepia() saturate(10000%) hue-rotate(295deg)
+    }
