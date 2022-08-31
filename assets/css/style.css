@@ -160,11 +160,12 @@ footer section{
     .date{
       position:absolute;
       left:27%;
-      bottom:9%;
+      bottom:5%;
       color:#ff5858;
       font-family:"Montserrat","Quicksand",sans-serif;
-      font-size:1.3em;
+      font-size:1em;
       font-weight:normal;
+      line-height:85%;
     }
     .ville{
       position:absolute;
