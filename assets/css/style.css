@@ -17,6 +17,8 @@ p.navbar-brand{
 h1, h2{
   color: #FF5858;
   font-family: Comfortaa, sans-serif;
+  width:100%;
+  white-space: normal !important;
 }
 
 div.container-fluid{
@@ -25,6 +27,10 @@ div.container-fluid{
 
 #carousel {
   margin: 0 auto;
+}
+
+.col-md-6 {
+  overflow:hidden;
 }
 
 .carousel-item img {
@@ -46,7 +52,7 @@ section{
 }
 
 footer img{
-  height: 80px;
+  width: 150px;
   position: relative;
   display: inline-block;
   margin: 10px;
@@ -80,18 +86,6 @@ footer section{
   }
 }
 
-@media (max-width: 480px){
-  nav div .container-fluid{
-    display: block;
-    border: 1px solid blue;
-  }
-  p.navbar-brand{
-    text-align: right;
-    border: 1px solid red;
-  }
-}
-
-
 
     .link-primary{
       color:#ffae9d;
@@ -102,6 +96,15 @@ footer section{
     }
 
 
+    .pvisuel{
+      overflow-x: hidden;
+    }
+@media (max-width: 580px){
+    .pvisuel{
+      overflow-x: scroll;
+    }
+}
+    
     .visuel{
       position:relative;
       width:516px;
@@ -121,11 +124,13 @@ footer section{
       justify-content: center;
       z-index:1000;
     }
+    
     .portrait img{
       height:100%;
       filter:grayscale(400%);
       position:inline-block;
     }
+    
     h1{
       font-size:1.5em !important;
       padding-top:0.5em !important;
@@ -133,7 +138,7 @@ footer section{
     h2.titre{
       position:absolute;
       left:25%;
-      right:10%;
+      width:70%;
       top:5%;
       background-color:#ff5858;
       color:white;
@@ -198,3 +203,13 @@ footer section{
       height:100%;
       filter:invert(100%) sepia() saturate(10000%) hue-rotate(295deg)
     }
+    
+@media (max-width: 1200px){
+
+    .col-md-6{
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+      width:100% !important;
+    }
+    
+}
