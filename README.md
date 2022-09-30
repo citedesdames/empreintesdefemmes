@@ -6,5 +6,6 @@ En 2015, dans la lignée des travaux d'Aurore Évain sur le matrimoine, le mouve
 Depuis, des promenades du matrimoine ont été proposées dans d'autres villes de France, pour les journées du matrimoine mais aussi pour la journée internationale des droits de femmes, proposées par des associations, des municipalités, des guides touristiques, des projets étudiants, etc. Dans le cadre du projet de recheche Cité des dames, créatrices dans la cité, nous avons recensé plus d'une centaine de promenades du matrimoine qui ont ainsi été proposées en France et sont visibles sur ce site.
 
 ## À propos du code du site
+Site accessible à l'adresse https://citedesdames.github.io/empreintesdefemmes/
 Site conçu et développé en HTML et CSS par Danie Lancéa pendant son stage de deuxième année de DUT MMI à l'IUT de Champs-sur-Marne.
 Compléments de développement HTML/CSS/Javascript : Philippe Gambette
